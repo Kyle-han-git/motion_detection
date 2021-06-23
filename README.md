@@ -1,6 +1,7 @@
-# 움직임 감지 실습입니다.
+# 움직임 감지 실습
 -----------------------
-먼저 openCV를 설치합니다.
+### 1. openCV 패키지들을 설치합니다.
+순서대로 설치해줍니다.
 
 ```
 sudo apt-get install build-essential cmake -y
@@ -13,4 +14,14 @@ sudo apt-get install mesa-utils libgl1-mesa-dri libgtkgl2.0-dev libgtkglext1-dev
 sudo apt-get install libatlas-base-dev gfortran libeigen3-dev -y
 sudo apt-get install python2.7-dev python3-dev python-numpy python3-numpy -y
 ```
-순서대로 설치합니다.
+
+### 2. openCV 소스코드를 다운받습니다.
+
+```
+mkdir opencv
+cd opencv
+wget -O opencv.zip https://github.com/opencv/opencv/archive/4.1.2.zip
+unzip opencv.zip
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.1.2.zip
+unzip opencv_contrib.zip
+```

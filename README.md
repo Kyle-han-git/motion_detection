@@ -63,4 +63,5 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 ```
 sudo nano /etc/dphys-swapfile
 CONF_SWAPSIZE=2048
+sudo /etc/init.d/dphys-swapfile restart
 ```

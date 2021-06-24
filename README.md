@@ -59,3 +59,8 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D BUILD_NEW_PYTHON_SUPPORT=ON \
 -D OPENCV_GENERATE_PKGCONFIG=ON ../
 ```
+### 4. 메모리를 늘려줍니다
+```
+sudo nano /etc/dphys-swapfile
+CONF_SWAPSIZE=2048
+```

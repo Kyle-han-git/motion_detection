@@ -74,4 +74,16 @@ make -j4
 ```
 make
 ```
-를 입력해줍니다
+를 입력해줍니다.
+### 5. 컴파일 완료된 파일을 설치해줍니다.
+```
+sudo make install
+```
+openCV라이브러리를 찾을 수 있도록 아래 명령어를 실행시켜주세요.
+```
+sudo ldconfig
+```
+dphys-swapfile 설정파일을 원래대로 수정해줍니다.
+```
+sudo nano /etc/dphys-swapfile
+```

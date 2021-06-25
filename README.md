@@ -86,4 +86,5 @@ sudo ldconfig
 dphys-swapfile 설정파일을 원래대로 수정해줍니다.
 ```
 sudo nano /etc/dphys-swapfile
+sudo /etc/init.d/dphys-swapfile restart
 ```

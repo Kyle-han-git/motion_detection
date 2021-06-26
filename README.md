@@ -32,7 +32,7 @@ unzip opencv_contrib.zip
 
 ### 3. 컴파일을 준비합니다.
 ```
-cd opencv-4.1.2
+cd opencv-4.5.1
 mkdir build
 cd build
 

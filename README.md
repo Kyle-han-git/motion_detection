@@ -47,7 +47,7 @@ sudo /etc/init.d/dphys-swapfile restart
 ```
 ### 5. 컴파일을 해줍니다.
 ```
-make -j4
+time make -j4
 ```
 'building cxx object modules/python3/cmakefiles/opencv_python3.dir/__/src2/cv2.cpp.o'
 이라는 오류가 발생하면 ctrl + c를 해서 강제 종료한 뒤

@@ -68,3 +68,14 @@ dphys-swapfile 설정파일을 원래대로 수정해줍니다.
 sudo nano /etc/dphys-swapfile
 sudo /etc/init.d/dphys-swapfile restart
 ```
+설치가 정상적으로 확인해봅니다.
+```
+pi@raspberrypi:~/opencv/opencv-4.5.1/build $ python3
+Python 3.7.3 (default, Jul 25 2020, 13:03:44)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import cv2
+>>> cv2.__version__
+'4.5.1'
+>>> quit()
+```

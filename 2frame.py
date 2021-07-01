@@ -33,21 +33,12 @@ if cap.isOpened():
             cv2.rectangle(b, (min(nzero[1]), min(nzero[0])),
                           (max(nzero[1]), max(nzero[0])), (0, 255, 0), 2)
 
-            '''
-            rectangle: pt1, pt2 기준으로 사각형 프레임을 만들어줌.
-            nzero: diff는 카메라 영상과 사이즈가 같으며, a, b프레임의 차이 어레이를 의미함.
-            (min(nzero[1]), min(nzero[0]): diff에서 0이 아닌 값 중 행, 열이 가장 작은 포인트
-            (max(nzero[1]), max(nzero[0]): diff에서 0이 아닌 값 중 행, 열이 가장 큰 포인트
-            (0, 255, 0): 사각형을 그릴 색상 값
-            2 : thickness
-            '''
-
             cv2.putText(b, "Motion detected!!", (10, 30),
                                                  cv2.FONT_HERSHEY_DUPLEX, 0.5, (0, 0, 255))
 
         cv2.imshow('motion', b)
 
         a = b
- 
+
         if cv2.waitKey(1) & 0xFF == 27:
             break
